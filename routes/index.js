@@ -35,8 +35,6 @@ router.post("/send", (req, res) => {
       "</em>"
   };
 
-  console.log(mailOptions);
-
   // send mail with defined transport object
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
